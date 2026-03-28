@@ -1,17 +1,18 @@
 public class OOPSBannerApp {
     public static void main(String[] args) {
 
+        // Inline array initialization
         String[] banner = {
                 String.join(" ", " ***** ", " ***** ", "******", " ***** "),
                 String.join(" ", "*     *", "*     *", "*     *", "*     *"),
                 String.join(" ", "*     *", "*     *", "*     *", "*      "),
                 String.join(" ", "*     *", "*     *", "******", " ***** "),
-                String.join(" ", "*     *", "*     *", "*", "      *"),
-                String.join(" ", "*     *", "*     *", "*", "*     *"),
-                String.join(" ", " ***** ", " ***** ", "*", " ***** ")
+                String.join(" ", "*     *", "*     *", "*", "           *"),
+                String.join(" ", "*     *", "*     *", "*", "*          *"),
+                String.join(" ", " ***** ", " ***** ", "*", "      ***** ")
         };
 
-        // Loop to print banner
+        // Loop to print
         for (String line : banner) {
             System.out.println(line);
         }
