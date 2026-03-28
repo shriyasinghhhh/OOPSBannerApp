@@ -1,19 +1,53 @@
 public class OOPSBannerApp {
+
     public static void main(String[] args) {
 
-        String[] banner = {
-                String.join(" ", " ***** ", " ***** ", "******", " ***** "),
-                String.join(" ", "*     *", "*     *", "*     *", "*     *"),
-                String.join(" ", "*     *", "*     *", "*     *", "*      "),
-                String.join(" ", "*     *", "*     *", "******", " ***** "),
-                String.join(" ", "*     *", "*     *", "*", "      *"),
-                String.join(" ", "*     *", "*     *", "*", "*     *"),
-                String.join(" ", " ***** ", " ***** ", "*", " ***** ")
-        };
+        String[] o = getOPattern();
+        String[] p = getPPattern();
+        String[] s = getSPattern();
 
-        // Loop to print banner
-        for (String line : banner) {
-            System.out.println(line);
+        // Combine O O P S
+        for (int i = 0; i < o.length; i++) {
+            System.out.println(o[i] + " " + o[i] + " " + p[i] + " " + s[i]);
         }
+    }
+
+    // Method for O
+    public static String[] getOPattern() {
+        return new String[]{
+                " ***** ",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*     *",
+                " ***** "
+        };
+    }
+
+    // Method for P
+    public static String[] getPPattern() {
+        return new String[]{
+                "****** ",
+                "*     *",
+                "*     *",
+                "****** ",
+                "*      ",
+                "*      ",
+                "*      "
+        };
+    }
+
+    // Method for S
+    public static String[] getSPattern() {
+        return new String[]{
+                " ***** ",
+                "*     *",
+                "*      ",
+                " ***** ",
+                "      *",
+                "*     *",
+                " ***** "
+        };
     }
 }
