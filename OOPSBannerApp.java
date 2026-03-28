@@ -7,8 +7,8 @@ public class OOPSBannerApp {
                 String.join(" ", "*     *", "*     *", "*     *", "*     *"),
                 String.join(" ", "*     *", "*     *", "*     *", "*      "),
                 String.join(" ", "*     *", "*     *", "******", " ***** "),
-                String.join(" ", "*     *", "*     *", "*", "           *"),
-                String.join(" ", "*     *", "*     *", "*", "*          *"),
+                String.join(" ", "*     *", "*     *", "*", "          *"),
+                String.join(" ", "*     *", "*     *", "*", "*         *"),
                 String.join(" ", " ***** ", " ***** ", "*", "      ***** ")
         };
 
